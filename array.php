@@ -63,6 +63,14 @@
     }
 
     //Trbalhando com array (Chave-Valor)
+        //quando tilizamos o método de chave valor, somente acessamos
+        //o valor através da referencia da chave.
+        //  chave               valor
+        //Ex: "nome"    => "Teclado"
+        //Para conseguir exibir a palavra teclado, temos que acessa-lá
+        //pela cahve. Ex:
+        //      array          chave
+        //echo($produtos["nome"])
     $produtos = array(
         "nome"          => "Teclado",
         "descricao"     => "Teclado da cor preto e cinza.",
@@ -70,6 +78,13 @@
         "valorUnitario" => 80.45,
         "cor"           => "Preto"
         
-        var_dump($produtos);
-    )
+    );
+    var_dump($produtos);
+
+
+
+
+
+
+
 ?> 
