@@ -19,7 +19,7 @@
     //echo($nomes[1]);
 
     $dados = array('José da Silva', 20 , 1850.56);
-//    var_dump($dados);
+    //var_dump($dados);
 
     //declarando um array
     $nomesFuncionarios = array();
@@ -40,20 +40,20 @@
     $qtde = count($nomesClientes);
 
     echo('quantidade de elementos no array');
-    echo($qtde);
+    
 
-    echo('********** Exibindo dados por meio do While ');
+    echo('********** Exibindo dados por meio do While <br> ');
     while ($cont < $qtde) {
         echo($nomesClientes[$cont]. '<br>');
         $cont ++;
     }
     
-    echo('********** Exibindo dados por meio do For ');
+    echo('********** Exibindo dados por meio do For <br> ');
     for ($cont=0; $cont < $qtde ; $cont++) { 
         echo($nomesClientes[$cont]. '<br>');
     }
 
-    echo('********** Exibindo dados por meio do For each ');
+    echo('********** Exibindo dados por meio do For each <br> ');
     //permite criar uma copia do array fazendo já a contagem
         //de quanos elementos existem no array, e permitindo que
         //na exibição dos valores não seja necessário especificar o
@@ -79,12 +79,77 @@
         "cor"           => "Preto"
         
     );
+    echo('<pre>');
     var_dump($produtos);
+    echo('</pre>');
+
+    //Trabalhando com array de indice, chave e valor
+    $produtosInformatica = array(
+
+        array(
+            "nome"          => "Teclado",
+            "descricao"     => "Teclado RGB",
+            "cor"           => "Preto",
+            "valor"         => 100.50,
+            "qtde"          => 20
+        ),
+
+        array(
+            "nome"          => "Mouse",
+            "descricao"     => "Mouse com 5 botoes",
+            "cor"           => "cinza",
+            "valor"         => 140.00,
+            "qtde"          => 100
+        ),
 
 
+    );
+    echo('<pre>');
+    var_dump($produtosInformatica); 
+    echo('</pre>');
+
+    //Para exibi dados de um array (indice, chave e valor) temos que
+    //primeiro especificar qual o indice do array principal, depois
+    //
+    echo($produtosInformatica[0]["nome"]);
+    echo($produtosInformatica[1]["valor"]);
+
+    //Eexemplo utilizando O chave como indice no primeiro array
+    $produtosInformatica = array(
+
+        "listTeclados" => array(
+            "nome"          => "Teclado",
+            "descricao"     => "Teclado RGB",
+            "cor"           => "Preto",
+            "valor"         => 100.50,
+            "qtde"          => 20
+        ),
+
+        "listTeclados" => array(
+            "nome"          => "Mouse",
+            "descricao"     => "Mouse com 5 botoes",
+            "cor"           => "cinza",
+            "valor"         => 140.00,
+            "qtde"          => 100
+        ),
 
 
+    );
+    echo('<pre>');
+    var_dump($produtosInformatica); 
+    echo('</pre>');
+
+    //Para exibi dados de um array (indice, chave e valor) temos que
+    //primeiro especificar qual o indice do array principal, depois
+    //
+    echo($produtosInformatica["listTeclados"]["nome"]);
+    echo($produtosInformatica["listTeclados"]["valor"]);
 
 
+    foreach ($produtosInformatica as $produtos) {
+        echo('<br>'.$produtos["nome"]. '<br>');
+        echo('<br>'.$produtos["qtde"]. '<br>');
+        
+    }
 
 ?> 
