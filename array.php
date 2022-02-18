@@ -7,8 +7,8 @@
     // (que não seja um array)
     //echo($nomes);
     
-    //Exibe um texto ou contedo de uma variavel mesmo semd um
-    //arrau sem detalhes técnicos
+    //Exibe um texto ou contedo de uma variavel mesmo sendo um
+    //array sem detalhes técnicos
     //print_r($nomes);
 
     //Exibe os dados de um objeto ou array ou variavel trazendo
@@ -111,8 +111,8 @@
     //Para exibi dados de um array (indice, chave e valor) temos que
     //primeiro especificar qual o indice do array principal, depois
     //
-    echo($produtosInformatica[0]["nome"]);
-    echo($produtosInformatica[1]["valor"]);
+    // echo($produtosInformatica[0]["nome"]);
+    // echo($produtosInformatica[1]["valor"]);
 
     //Eexemplo utilizando O chave como indice no primeiro array
     $produtosInformatica = array(
