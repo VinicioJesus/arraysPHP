@@ -39,7 +39,7 @@
 
     $qtde = count($nomesClientes);
 
-    echo('quantidade de elementos no array');
+    // echo('quantidade de elementos no array');
     
 
     echo('********** Exibindo dados por meio do While <br> ');
@@ -80,7 +80,7 @@
         
     );
     echo('<pre>');
-    var_dump($produtos);
+    print_r($produtos);
     echo('</pre>');
 
     //Trabalhando com array de indice, chave e valor
@@ -105,7 +105,7 @@
 
     );
     echo('<pre>');
-    var_dump($produtosInformatica); 
+    print_r($produtosInformatica); 
     echo('</pre>');
 
     //Para exibi dados de um array (indice, chave e valor) temos que
@@ -136,20 +136,20 @@
 
     );
     echo('<pre>');
-    var_dump($produtosInformatica); 
+    print_r($produtosInformatica); 
     echo('</pre>');
 
     //Para exibi dados de um array (indice, chave e valor) temos que
     //primeiro especificar qual o indice do array principal, depois
     //
-    echo($produtosInformatica["listTeclados"]["nome"]);
-    echo($produtosInformatica["listTeclados"]["valor"]);
+    // echo($produtosInformatica["listTeclados"]["nome"]);
+    // echo($produtosInformatica["listTeclados"]["valor"]);
 
 
-    foreach ($produtosInformatica as $produtos) {
-        echo('<br>'.$produtos["nome"]. '<br>');
-        echo('<br>'.$produtos["qtde"]. '<br>');
+    // foreach ($produtosInformatica as $produtos) {
+    //     echo('<br>'.$produtos["nome"]. '<br>');
+    //     echo('<br>'.$produtos["qtde"]. '<br>');
         
-    }
+    // }
 
 ?> 
